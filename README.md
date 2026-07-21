@@ -81,6 +81,9 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 | κ | 0.81 | Moderate mean reversion speed |
 | μ | $3.93 | Long-run equilibrium price |
 | σ | 0.55 | Annualised volatility in log space |
+### Simulated Price Paths
+![Simulated Paths](simulated_paths.png)
+
 
 ### Option Prices at 1-Year Expiry
 | Strike | Option Price | In the Money |
@@ -91,7 +94,16 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 | $4.50 | $0.0016 | 1.2% |
 | $5.00 | $0.0000 | 0.0% |
 
+### Option Price Surface
+![Option Price Surface](option_price_surface.png)
+
+### Convenience Yield & Storage Analysis
+![Convenience Yield and Storage](convenience_yield_storage.png)
+
+### Storage vs Convenience Yield
+![Storage vs Convenience Yield](storage_vs_cy.png)
 ---
+
 
 ## Limitations
 - **Fat tails:** The Gaussian OU model cannot reproduce excess kurtosis 
