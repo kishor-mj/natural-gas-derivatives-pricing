@@ -118,6 +118,7 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 - **Convenience yield:** Front-month futures approximation used in 
   absence of full forward curve data; a Bloomberg terminal would enable 
   richer curve analysis
+- **Measure change:** Parameters are calibrated under the real-world (historical) measure via MLE on spot price history. Derivative pricing formally requires simulation under the risk-neutral measure, where the long-run mean is adjusted by the market price of risk λ. This simplification is standard in academic commodity models but would require futures curve calibration to resolve fully. 
 
 ---
 
