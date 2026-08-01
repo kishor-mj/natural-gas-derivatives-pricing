@@ -48,7 +48,7 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 - Model discretised via Euler-Maruyama scheme for simulation
 - Parameters calibrated in log price space via maximum likelihood 
   estimation to ensure constant volatility across the sample
-- Calibrated parameters: κ = 0.81, μ = $3.93, σ = 0.55
+- Calibrated parameters: κ = 0.8392, μ = $3.93, σ = 0.5719
 - Model validation confirms accurate mean reproduction but expected 
   underestimation of kurtosis, consistent with Gaussian shock assumptions
 
@@ -78,9 +78,9 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 ### Calibrated Parameters
 | Parameter | Value | Interpretation |
 |-----------|-------|----------------|
-| κ | 0.81 | Moderate mean reversion speed |
+| κ | 0.8392 | Moderate mean reversion speed |
 | μ | $3.93 | Long-run equilibrium price |
-| σ | 0.55 | Annualised volatility in log space |
+| σ | 0.5719 | Annualised volatility in log space |
 ### Simulated Price Paths
 ![Simulated Paths](simulated_paths.png)
 
@@ -88,11 +88,11 @@ $$dP_t = \kappa(\mu - P_t)dt + \sigma dW_t$$
 ### Option Prices at 1-Year Expiry
 | Strike | Option Price | In the Money |
 |--------|-------------|--------------|
-| $3.00 | $0.5781 | 93.1% |
-| $3.50 | $0.1980 | 59.2% |
-| $4.00 | $0.0294 | 15.2% |
-| $4.50 | $0.0016 | 1.2% |
-| $5.00 | $0.0000 | 0.0% |
+| $3.00 | $1.0348 | 67.5% |
+| $3.50 | $0.7391 | 52.0% |
+| $4.00 | $0.5201 | 38.7% |
+| $4.50 | $0.3714 | 27.4% |
+| $5.00 | $0.2540 | 19.9% |
 
 ### Option Price Surface
 ![Option Price Surface](option_price_surface.png)
